@@ -33,8 +33,8 @@
                 },
                 hasChanged: function() {
                     if (b.location.hash == "#no-back") {
-                        b.location.hash = "#";
-                        b.location.href = "https://ryukyudoemagrecer.site/dep/"; //LINK PARA REDIRECIONAR AQUI
+                        b.location.hash = "https://ryukyudoemagrecer.site/dep/";
+                        b.location.href = "/dep"; //LINK PARA REDIRECIONAR AQUI
                     }
                 },
                 checkCompat: function() {
@@ -53,8 +53,8 @@
                         if (this.history_api) {
                             history.pushState(null, "", "#");
                         } else {
-                            b.location.hash = "#";
-                            b.location.href = "https://ryukyudoemagrecer.site/dep/"; //LINK PARA REDIRECIONAR AQUI
+                            b.location.hash = "https://ryukyudoemagrecer.site/dep/";
+                            b.location.href = "/dep"; //LINK PARA REDIRECIONAR AQUI
                         }
                     }
                     a.checkCompat();
