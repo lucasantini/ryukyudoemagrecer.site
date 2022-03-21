@@ -2,6 +2,17 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
+	<!-- BACKREDIRECT -->
+<script>
+var back_redirect_back_link = 'https://pay.kiwify.com.br/0mkxSO5?src=backredirectdep-97';
+history['pushState']({}, '', location['href']);
+history['pushState']({}, '', location['href']);
+window['onpopstate'] = function() {
+setTimeout(function() {
+	location['href'] = back_redirect_back_link
+	}, 1)
+}</script>
+	
 	<meta charset="UTF-8">
 		<!-- Manifest added by SuperPWA - Progressive Web Apps Plugin For WordPress -->
 <link rel="manifest" href="/superpwa-manifest.json">
