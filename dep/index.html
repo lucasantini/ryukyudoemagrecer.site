@@ -2,25 +2,22 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-	<!-- BACKREDIRECT -->
- <script type="text/javascript">
-        (function (b) {
+	<script>
+        (function(b) {
             var a = {
                 version: "0.0.1",
                 history_api: typeof history.pushState !== "undefined",
-                init: function () {
+                init: function() {
                     b.location.hash = "#no-back";
                     a.configure();
                 },
- 
-                hasChanged: function () {
+                hasChanged: function() {
                     if (b.location.hash == "#no-back") {
                         b.location.hash = "#";
-                        b.location.href = "https://pay.kiwify.com.br/0mkxSO5?src=backredirectdep-97";
+                        b.location.href = "https://pay.kiwify.com.br/0mkxSO5?src=backredirectdep-97"; //LINK PARA REDIRECIONAR AQUI
                     }
                 },
- 
-                checkCompat: function () {
+                checkCompat: function() {
                     if (b.addEventListener) {
                         b.addEventListener("hashchange", a.hasChanged, false);
                     } else {
@@ -31,14 +28,13 @@
                         }
                     }
                 },
- 
-                configure: function () {
+                configure: function() {
                     if (b.location.hash == "#no-back") {
                         if (this.history_api) {
                             history.pushState(null, "", "#");
                         } else {
                             b.location.hash = "#";
-                            b.location.href = "https://pay.kiwify.com.br/0mkxSO5?src=backredirectdep-97";
+                            b.location.href = "https://pay.kiwify.com.br/0mkxSO5?src=backredirectdep-97"; //LINK PARA REDIRECIONAR AQUI
                         }
                     }
                     a.checkCompat();
@@ -46,7 +42,7 @@
                 }
             };
             if (typeof define === "function" && define.amd) {
-                define(function () {
+                define(function() {
                     return a;
                 });
             } else {
